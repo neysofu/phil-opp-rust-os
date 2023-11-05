@@ -11,6 +11,8 @@ use core::panic::PanicInfo;
 pub extern "C" fn _start() -> ! {
     println!("Hello World{}", "!");
 
+    blog_os::init(); // new
+
     #[cfg(test)]
     test_main();
 
